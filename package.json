@@ -4,7 +4,7 @@
   "description": "MCP server for AO/Arweave - query processes, send messages, spawn processes, execute Lua",
   "main": "dist/index.js",
   "bin": {
-    "ao-mcp-server": "./dist/index.js"
+    "ao-mcp-server": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -29,7 +29,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/credentum/ao-mcp-server"
+    "url": "git+https://github.com/credentum/ao-mcp-server.git"
   },
   "homepage": "https://github.com/credentum/ao-mcp-server#readme",
   "bugs": {
