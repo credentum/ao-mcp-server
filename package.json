@@ -1,6 +1,6 @@
 {
   "name": "ao-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for AO/Arweave - query processes, send messages, spawn processes, execute Lua",
   "main": "dist/index.js",
   "bin": {
