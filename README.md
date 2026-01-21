@@ -13,13 +13,13 @@ MCP (Model Context Protocol) server for AO/Arweave that lets Claude Desktop, Cur
 ## Installation
 
 ```bash
-npm install -g @anthropic-community/ao-mcp-server
+npm install -g ao-mcp-server
 ```
 
 Or run directly with npx:
 
 ```bash
-npx @anthropic-community/ao-mcp-server
+npx ao-mcp-server
 ```
 
 ## Configuration
@@ -33,7 +33,7 @@ Add to your `~/.config/claude/claude_desktop_config.json` (Linux/Mac) or `%APPDA
   "mcpServers": {
     "ao": {
       "command": "npx",
-      "args": ["@anthropic-community/ao-mcp-server"]
+      "args": ["ao-mcp-server"]
     }
   }
 }
@@ -48,7 +48,7 @@ Add to your Cursor MCP settings:
   "mcpServers": {
     "ao": {
       "command": "npx",
-      "args": ["@anthropic-community/ao-mcp-server"]
+      "args": ["ao-mcp-server"]
     }
   }
 }
@@ -120,8 +120,8 @@ Example wallet structure:
 
 ```bash
 # Clone the repository
-git clone https://github.com/credentum/forge
-cd forge/lib/ao-mcp-server
+git clone https://github.com/credentum/ao-mcp-server
+cd ao-mcp-server
 
 # Install dependencies
 npm install

@@ -1,5 +1,5 @@
 {
-  "name": "@anthropic-community/ao-mcp-server",
+  "name": "ao-mcp-server",
   "version": "1.0.0",
   "description": "MCP server for AO/Arweave - query processes, send messages, spawn processes, execute Lua",
   "main": "dist/index.js",
@@ -22,13 +22,18 @@
     "permaweb",
     "model-context-protocol",
     "ai",
-    "llm"
+    "llm",
+    "hyperbeam"
   ],
   "author": "Credentum",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/credentum/forge"
+    "url": "https://github.com/credentum/ao-mcp-server"
+  },
+  "homepage": "https://github.com/credentum/ao-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/credentum/ao-mcp-server/issues"
   },
   "engines": {
     "node": ">=18.0.0"
