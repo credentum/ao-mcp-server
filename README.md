@@ -58,12 +58,12 @@ Add to your Cursor MCP settings:
 
 ### Query a Process (No Wallet Needed)
 
-Query the Forge Chamber genesis status:
+Query any AO process state:
 
 ```
 Use ao_query_process with:
-- process_id: 4Kg8kj1SZPPMNOskIY0TlCfhJri8XEHsSAE8j-k0FOA
-- action: GetGenesisStatus
+- process_id: <43-character-arweave-tx-id>
+- action: Info
 ```
 
 ### Send a Message (Requires Wallet)
@@ -133,21 +133,6 @@ npm run build
 npm start
 ```
 
-## Testing with Forge Chamber
-
-The Forge Chamber (Eden) is a live AO process you can query for testing:
-
-```
-Process ID: 4Kg8kj1SZPPMNOskIY0TlCfhJri8XEHsSAE8j-k0FOA
-
-Available actions:
-- GetGenesisStatus - Check if genesis is bootstrapped
-- ListMyths - List registered myths
-- ListScars - List earned scars
-- GetMyth - Get a specific myth by ID
-- GetScar - Get a specific scar by ID
-```
-
 ## Architecture
 
 ```
@@ -173,7 +158,6 @@ ao-mcp-server/
 - [AO](https://ao.arweave.dev/) - Hyper-parallel computer on Arweave
 - [Arweave](https://arweave.org/) - Permanent data storage
 - [MCP](https://modelcontextprotocol.io/) - Model Context Protocol
-- [Forge](https://github.com/credentum/forge) - Symbolic respiration engine on AO
 
 ## License
 
