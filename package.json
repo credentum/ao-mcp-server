@@ -1,0 +1,48 @@
+{
+  "name": "@anthropic-community/ao-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for AO/Arweave - query processes, send messages, spawn processes, execute Lua",
+  "main": "dist/index.js",
+  "bin": {
+    "ao-mcp-server": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "npx ts-node --esm src/index.ts",
+    "test": "node --test dist/**/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "ao",
+    "arweave",
+    "claude",
+    "anthropic",
+    "permaweb",
+    "model-context-protocol",
+    "ai",
+    "llm"
+  ],
+  "author": "Credentum",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/credentum/forge"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.1",
+    "@permaweb/aoconnect": "^0.0.63"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  }
+}
